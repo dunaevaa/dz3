@@ -10,7 +10,8 @@ void print_Matrix (int **Matrix, int m, int n) {
     else {
           for (int i=0; i<m; i++) {
                for (int j=0; j<n; j++)
-                    cout << Matrix[i][j] << " " << endl;
+                    cout << Matrix[i][j] << " ";
+		cout << endl;
             }
     }
 }    
@@ -22,8 +23,7 @@ void deleting_Matrix (int **Matrix, int &m, int &n) {
 }
 
 void menu() {
-     cout << "Выберите одну из операций" << endl
-          << endl;
+     cout << "Выберите одну из операций" << endl;
      cout << "1.Вывести матрицу" << endl;
      cout << "2.Сложить матрицу" << endl;
      cout << "3.Умножить матрицу" << endl;
@@ -35,7 +35,7 @@ void menu() {
 }
      
 int main (int argc, char *argv[]) {
-    setlocale (LC_ALL, "Russia")
+    setlocale (LC_ALL, "Russia");
     string str1, str2;
     int m, n, int1;
     int a=0;
@@ -78,7 +78,7 @@ int main (int argc, char *argv[]) {
                                             break;
                                         }
                                         int1_str += m_array[b];
-                                        a++
+                                        a++;
                                     }
                                     if (int1_str != "") {
                                         int1 = atoi (int1_str.c_str());
@@ -103,11 +103,12 @@ int main (int argc, char *argv[]) {
                         }
             }
     menu ();
+    int choise = 0;
     cin >> choise;
     switch (choise) {
-                    case 1: print_Matrix (Matrix, m, n)
+                    case 1: print_Matrix (Matrix, m, n);
     }
-}
-    
+
+ }  
 deleting_Matrix (Matrix, m, n);
 }
