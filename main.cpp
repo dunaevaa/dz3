@@ -34,8 +34,8 @@ void menu() {
      cout << "8.Завершить работу программы" << endl;
 }
      
-setlocale (LC_ALL, "RUS")
 int main (int argc, char *argv[]) {
+    setlocale (LC_ALL, "RUS")
     string str1, str2;
     int m, n, int1;
     int a=0;
