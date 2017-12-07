@@ -35,7 +35,7 @@ void menu() {
 }
      
 int main (int argc, char *argv[]) {
-    setlocale (LC_ALL, "RUS")
+    setlocale (LC_ALL, "Russia")
     string str1, str2;
     int m, n, int1;
     int a=0;
