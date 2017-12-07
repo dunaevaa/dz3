@@ -102,6 +102,7 @@ int main (int argc, char *argv[]) {
                             }
                         }
             }
+    menu ();
     cin >> choise;
     switch (choise) {
                     case 1: print_Matrix (Matrix, m, n)
