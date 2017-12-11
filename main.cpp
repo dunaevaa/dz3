@@ -15,7 +15,7 @@ void print_Matrix (int **Matrix, int m, int n) {
             }
     }
 }    
-void deleting_Matrix (int **Matrix, int &m, int &n) {
+void deleting_Matrix (int *Matrix, int m) {
     if (Matrix != nullptr) {
         for (int i=0; i<m; i++) delete [] Matrix[i];
         delete [] Matrix;
